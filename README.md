@@ -1,6 +1,6 @@
 # ComparEdge Data Loader for LangChain
 
-Pulls SaaS product data from the ComparEdge API into LangChain Documents. 331 products, 28 categories, real pricing data. No API key.
+Pulls SaaS product data from the ComparEdge API into LangChain Documents. Real SaaS pricing — plans, features, ratings. No API key.
 
 ## Quick start
 
@@ -20,7 +20,7 @@ for doc in docs[:3]:
 
 | Param | Type | Default | What it does |
 |-------|------|---------|-------------|
-| `category` | str or None | None | Filter by slug: `"crm"`, `"llm"`, `"project-management"`, etc. `None` = all 331 products |
+| `category` | str or None | None | Filter by slug: `"crm"`, `"llm"`, `"project-management"`, etc. `None` = all products |
 | `include_pricing` | bool | True | Add pricing plans to document text + `starting_price` to metadata |
 | `include_features` | bool | False | Append feature list to document text (capped at 20 per product) |
 
